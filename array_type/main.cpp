@@ -1,11 +1,12 @@
-#include "stdio.h"
-#include "test.h"
+#include <cstdio>
+#include "lib.h"
+
 int main()
 {
-    array *mydemoarray = NULL;
+    array *mydemoarray = nullptr;
 
     getArraySize(&mydemoarray);
-    if (mydemoarray != NULL) {
+    if (mydemoarray != nullptr) {
         printf("%sizeof(*mydemoarray)=%d", sizeof(*mydemoarray));
     }
     return 0;

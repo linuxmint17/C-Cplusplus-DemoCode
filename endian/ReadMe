@@ -1,0 +1,1 @@
+can be comipled with 'g++ -std=c++11 endian_demo.cpp' or 'clang++ endian_demo.cpp'
