@@ -1,3 +1,6 @@
+ default = demo.tar.gz
+$(default) : main.c a.h a.c Makefile
+	tar cvfz $(default) main.c a.h a.c Makefile
 CXX=clang++
 #compiler flags:
 #-g adds debugging information to the executabble 
