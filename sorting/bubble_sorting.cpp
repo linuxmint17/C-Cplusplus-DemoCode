@@ -24,10 +24,10 @@ template <typename T>
 void bubble_sort(std::vector<T> &array)
 {
     unsigned int sz = array.size();
-    for (unsigned int i = 0;i < sz;i++) {
-        for (unsigned int j = i + 1; j < sz;j++) {
-            if (array[i] < array[j]) {
-                swap(array[i], array[j]);
+    for (unsigned int i = 0; i < sz - 1; i++) { // 循环的次数 sz - 1 次数
+        for (unsigned int j = 0; j < sz - 1 - i; j++) {
+            if (array[j] < array[j + 1]) {
+                swap(array[j], array[j + 1]);
             }
         }
     }

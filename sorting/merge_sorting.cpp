@@ -25,9 +25,9 @@ void select_sort(std::vector<T> &array)
 {
     unsigned int sz = array.size();
     unsigned int max_idx;
-    for (unsigned int i = 0;i < sz;i++) {
+    for (unsigned int i = 0; i < sz; i++) {
         max_idx = i;
-        for (unsigned int j = i + 1;j < sz;j++) {
+        for (unsigned int j = i + 1; j < sz; j++) {
             if (array[max_idx] < array[j]) {
                 max_idx = j;
             }
